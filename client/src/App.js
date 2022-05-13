@@ -3,13 +3,21 @@ import { BrowserRouter, Route } from "react-router-dom"
 
 const PageOne = ()  => {
     return (
-        <div>Page1!</div>
+        <div>
+            Page1!
+            {/* Bad code. don't use anchor tags. */}
+            <a href="/2">Go to page 2</a>
+        </div>
     )
 }
 
 const PageTwo = () => {
     return(
-        <div>Page2!</div>
+        <div>
+            Page2!
+            {/* Bad code. don't use anchor tags. */}
+            <a href="/">Go to page 1</a>
+        </div>
     )
 }
 
