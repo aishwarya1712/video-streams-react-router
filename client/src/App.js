@@ -16,8 +16,10 @@ const PageTwo = () => {
 const App = () => {
     return (
         <BrowserRouter>
-            <Route path="/" exact component={PageOne}></Route>
-            <Route path="/2" component={PageTwo}></Route>
+            <div>
+                <Route path="/" exact component={PageOne}></Route>
+                <Route path="/2" component={PageTwo}></Route>
+            </div>
         </BrowserRouter>
     )
 }
