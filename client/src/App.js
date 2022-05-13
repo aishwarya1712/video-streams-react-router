@@ -1,12 +1,12 @@
 import React from "react";
-import { BrowserRouter, Route } from "react-router-dom"
+import { BrowserRouter, Route, Link } from "react-router-dom"
 
 const PageOne = ()  => {
     return (
         <div>
             Page1!
-            {/* Bad code. don't use anchor tags. */}
-            <a href="/2">Go to page 2</a>
+            {/* Good code. Use link instead of anchor tags. */}
+            <Link to="/2">Go to page 2</Link>
         </div>
     )
 }
@@ -15,8 +15,8 @@ const PageTwo = () => {
     return(
         <div>
             Page2!
-            {/* Bad code. don't use anchor tags. */}
-            <a href="/">Go to page 1</a>
+            {/* Good code. Use link instead of anchor tags. */}
+            <Link to="/">Go to page 1</Link>
         </div>
     )
 }
